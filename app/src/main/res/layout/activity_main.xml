@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.frescopractice.MainActivity">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:onClick="handleClick"
+        android:text="Click" />
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sv_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        fresco:actualImageScaleType="focusCrop"
+        fresco:backgroundImage="@android:color/holo_orange_light"
+        fresco:fadeDuration="5000"
+        fresco:failureImage="@drawable/icon_failure"
+        fresco:failureImageScaleType="centerInside"
+        fresco:placeholderImage="@drawable/icon_placeholder"
+        fresco:placeholderImageScaleType="fitCenter"
+        fresco:pressedStateOverlayImage="@android:color/holo_green_dark"
+        fresco:progressBarAutoRotateInterval="5000"
+        fresco:progressBarImage="@drawable/icon_progress_bar"
+        fresco:progressBarImageScaleType="centerInside"
+        fresco:retryImage="@drawable/icon_retry"
+        fresco:retryImageScaleType="centerCrop"
+        fresco:roundTopLeft="false"
+        fresco:roundWithOverlayColor="@android:color/darker_gray"
+        fresco:roundedCornerRadius="30dp" />
+
+</RelativeLayout>
