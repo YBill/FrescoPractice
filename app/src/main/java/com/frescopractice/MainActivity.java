@@ -10,6 +10,9 @@ import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.drawee.interfaces.DraweeController;
 import com.facebook.drawee.view.SimpleDraweeView;
 
+/**
+ * 原文：http://blog.csdn.net/y1scp/article/details/49245535
+ */
 public class MainActivity extends AppCompatActivity {
 
     private SimpleDraweeView image1Sdv;
