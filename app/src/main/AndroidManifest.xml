@@ -11,10 +11,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".Fresco1Activity">
 
         </activity>
-        <activity android:name=".Fresco1Activity">
+        <activity android:name=".Fresco2Activity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

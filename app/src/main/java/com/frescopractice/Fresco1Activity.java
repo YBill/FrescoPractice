@@ -29,7 +29,7 @@ public class Fresco1Activity extends AppCompatActivity {
         Drawable rotateDrawable = new AutoRotateDrawable(ContextCompat.getDrawable(this, R.drawable.icon_progress_bar), 5000);
 
         // 获取GenericDraweeHierarchy对象
-        GenericDraweeHierarchy hierarchy = new GenericDraweeHierarchyBuilder(getResources())
+        GenericDraweeHierarchy hierarchy = GenericDraweeHierarchyBuilder.newInstance(getResources())
                 .setPlaceholderImage(R.drawable.icon_placeholder) //设置占位图，它默认的缩放类型是CENTER_INSIDE
                 .setProgressBarImage(rotateDrawable) // 设置进度条
                 .setFailureImage(R.drawable.icon_failure) // 设置加载失败图
